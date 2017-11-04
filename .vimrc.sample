@@ -93,3 +93,4 @@ set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+syntax on
