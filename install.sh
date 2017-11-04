@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+ln -s ~/dotfiles/.bashrc.sample ~/.bashrc
+ln -s ~/dotfiles/.bash_profile.sample ~/.bash_profile
 ln -s ~/dotfiles/.vimrc.sample ~/.vimrc
 ln -s ~/dotfiles/.screenrc.sample ~/.screenrc
 ln -s ~/dotfiles/.screenrc.local ~/.screenrc.local
