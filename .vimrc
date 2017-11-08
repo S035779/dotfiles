@@ -1,9 +1,13 @@
-if has('vim_starting')
-    set nocompatible
-    set runtimepath+=~/vimfiles/bundle/neobundle.vim
+if has('win32')
+    set runtimepath^=~/.vim/
 endif
 
-call neobundle#begin(expand('~/vimfiles/bundle'))
+if has('vim_starting')
+    set nocompatible
+    set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " manage neobundle.vim
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -48,8 +52,8 @@ let g:quickrun_config={'*': {'split': ''}}
 """""""""""""""""""""""""""
 " Set value for seoul256.vim plugin.
 """""""""""""""""""""""""""
-"let g:seoul256_background = 233
-"colo seoul256
+let g:seoul256_background = 233
+colo seoul256
 "set background=dark
 
 "colo seoul256-light
@@ -58,12 +62,12 @@ let g:quickrun_config={'*': {'split': ''}}
 """""""""""""""""""""""""""
 " Set value for 'scrooloose/syntastic' plugin.
 """""""""""""""""""""""""""
-let g:syntastic_check_on_open=0     "ファイルを開いたときはチェックしない
-let g:syntastic_check_on_save=1     "保存時にはチェック
-let g:syntastic_check_on_wq = 0     " wqではチェックしない
-let g:syntastic_auto_loc_list=1     "エラーがあったら自動でロケーションリストを開く
-let g:syntastic_loc_list_height=6   "エラー表示ウィンドウの高さ
-set statusline+=%#warningmsg#       "エラーメッセージの書式
+let g:syntastic_check_on_open=0 "ファイルを開いたときはチェックしない
+let g:syntastic_check_on_save=1 "保存時にはチェック
+let g:syntastic_check_on_wq = 0 " wqではチェックしない
+let g:syntastic_auto_loc_list=1 "エラーがあったら自動でロケーションリストを開く
+let g:syntastic_loc_list_height=6 "エラー表示ウィンドウの高さ
+set statusline+=%#warningmsg# "エラーメッセージの書式
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_javascript_checkers = ['eslint'] "ESLintを使う
@@ -91,14 +95,13 @@ set virtualedit=block
 set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
-
-"set list
-"set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
-
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set encoding=utf-8
-set fileformats=dos
 set fileencoding=utf-8
-set undodir=~/vimfiles/tmp
-set backupdir=~/vimfiles/tmp
-set directory=~/vimfiles/tmp
-set viminfo+=n~/vimfiles/tmp/viminfo.txt
+set fileencodings=utf-8,cp932
+set undodir=~/.vim/tmp
+set backupdir=~/.vim/tmp
+set directory=~/.vim/tmp
+set viminfo+=n~/.vim/tmp/viminfo.txt
+syntax on
