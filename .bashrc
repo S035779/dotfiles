@@ -11,7 +11,6 @@ export PS1='\[\033[0;33m\]\u@\h \[\033[1;30m\]\t \[\033[1;32m\]$(git_branch)\[\0
 alias vi="vim"
 alias c="clear"
 alias x="exit"
-alias ls="ls -al"
 alias h="history"
 alias hcl="history -c;clear"
 alias
