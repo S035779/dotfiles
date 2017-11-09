@@ -84,9 +84,9 @@ let g:syntastic_mode_map = {
 set number
 set title
 set ambiwidth=double
-set tabstop=4
 set expandtab
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smartindent
 set nrformats-=octal
 set hidden
