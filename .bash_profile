@@ -25,3 +25,7 @@ export HTTPS_PROXY_REQUEST_FULLURI=0
 export no_proxy="127.0.0.1,localhost"
 export NO_PROXY="127.0.0.1,localhost"
 
+# JavaSDK VM Ant
+export ANT_HOME=/usr/local/ant
+export JAVA_HOME=/usr
+export PATH=${PATH}:${ANT_HOME}/bin
