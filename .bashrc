@@ -15,5 +15,3 @@ alias h="history"
 alias hcl="history -c;clear"
 
 export LESSOPEN="|~/dotfiles/lesspipe.sh %s"
-
-export NODE_ENV="development"
