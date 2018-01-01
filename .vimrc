@@ -121,4 +121,5 @@ set undodir=~/.vim/tmp
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set viminfo+=n~/.vim/tmp/viminfo.txt
+set backupcopy=yes
 syntax on
