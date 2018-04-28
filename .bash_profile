@@ -6,9 +6,11 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-PATH=$HOME/.nodebrew/current/bin:$PATH
-PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
-PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export CLICOLOR
+export WINEARCH
+export WINEPREFIX
+export PS1
+export LESSOPEN
 export PATH
 
 # proxy
@@ -23,3 +25,4 @@ export https_proxy="$HOST:$PORT"
 export no_proxy="127.0.0.1,localhost"
 export NO_PROXY="127.0.0.1,localhost"
 
+export MAIL

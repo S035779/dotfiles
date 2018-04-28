@@ -17,14 +17,20 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " :help neobundle-examples
 """"""""""""""""""""""""""""""""""""""""""""""""
 NeoBundle 'vim-jp/vimdoc-ja'
-NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'junegunn/seoul256.vim'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'thinca/vim-ref'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neoinclude.vim'
+NeoBundle 'Shougo/neosnippet.vim'
 NeoBundleLazy 'heavenshell/vim-jsdoc' , {'autoload': {'filetypes': ['javascript']}}
 NeoBundle 'moll/vim-node'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'KazuakiM/neosnippet-snippets'
+NeoBundle 'vim-scripts/taglist.vim'
 
 call neobundle#end()
 
@@ -78,8 +84,19 @@ let g:syntastic_mode_map = {
       \ }
 
 """""""""""""""""""""""""""
-" Set value for unite.vim plugin.
+" Set value for systax/php.vim plugin.
 """""""""""""""""""""""""""
+" $VIMRUNTIME/syntax/php.vim
+let g:php_baselib       = 1
+let g:php_htmlInStrings = 1
+let g:php_noShortTags   = 1
+let g:php_sql_query     = 1
+
+"""""""""""""""""""""""""""
+" Set value for syntax/sql.vim plugin.
+"""""""""""""""""""""""""""
+" $VIMRUNTIME/syntax/sql.vim
+let g:sql_type_default = 'mysql' " MySQLの場合
 
 set number
 set title
@@ -104,4 +121,15 @@ set undodir=~/.vim/tmp
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set viminfo+=n~/.vim/tmp/viminfo.txt
+set backupcopy=yes
 syntax on
+
+if has('gui_macvim')
+    set showtabline=2	" タブを常に表示
+    set imdisable	" IMを無効化
+    set transparency=10	" 透明度を指定
+    set antialias
+    set guifont=Monaco:h14
+    colorscheme macvim
+endif
+
