@@ -12,6 +12,7 @@ alias x="exit"
 alias h="history"
 alias hcl="history -c;clear"
 
+LANG=ja_JP.utf-8
 CLICOLOR=1
 WINEARCH="win32"
 WINEPREFIX="$HOME/.wine-win32"
