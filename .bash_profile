@@ -12,6 +12,7 @@ export WINEPREFIX
 export PS1
 export LESSOPEN
 export PATH
+# export MAIL
 
 # proxy
 #HOST="mamo:mamo1114@ns-master.marimo.net"
@@ -25,4 +26,3 @@ export PATH
 export no_proxy="127.0.0.1,localhost"
 export NO_PROXY="127.0.0.1,localhost"
 
-export MAIL
