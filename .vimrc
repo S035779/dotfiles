@@ -116,6 +116,7 @@ scriptencoding utf-8
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,cp932
+set fileformats=unix,dos,mac
 set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set undodir=~/.vim/tmp
