@@ -112,11 +112,13 @@ set virtualedit=block
 set whichwrap=b,s,[,],<,>
 set backspace=indent,eol,start
 set wildmenu
-set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+scriptencoding utf-8
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,cp932
+set fileformats=unix,dos,mac
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set undodir=~/.vim/tmp
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
