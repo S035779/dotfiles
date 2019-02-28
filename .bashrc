@@ -20,4 +20,13 @@ LESSOPEN="|~/dotfiles/lesspipe.sh %s"
 MAIL=$HOME/Maildir
 PATH=$HOME/.nodebrew/current/bin:$PATH
 PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
-PATH=$PATH:$HOME/.local/bin:$HOME/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/work/google-cloud-sdk/bin
+
+# rbenv
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
+
+OPENSSL=1.0.2o_1
+LDFLAGS=-L/usr/local/Cellar/openssl/${OPENSSL}/lib
+CPPFLAGS=-I/usr/local/Cellar/openssl/${OPENSSL}/include
