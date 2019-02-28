@@ -29,8 +29,8 @@ PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
-OPENSSL=1.0.2o_1
-LDFLAGS="-L/usr/local/Cellar/openssl/${OPENSSL}/lib"
-CFLAGS="-I/usr/local/Cellar/openssl/${OPENSSL}/include"
-CXXFLAGS="${CFLANGS}"
-CPPFLAGS="${CFLANGS}"
+#OPENSSL=1.0.2o_1
+#LDFLAGS="-L/usr/local/Cellar/openssl/${OPENSSL}/lib"
+#CFLAGS="-I/usr/local/Cellar/openssl/${OPENSSL}/include"
+#CXXFLAGS="${CFLANGS}"
+#CPPFLAGS="${CFLANGS}"
