@@ -16,6 +16,11 @@ export WINEPREFIX
 export PS1
 export LESSOPEN
 export PATH
+export CPPFLAGS
+export CXXFLAGS
+export CFLAGS
+export LDFLAGS
+
 # export MAIL
 
 # proxy
