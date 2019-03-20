@@ -124,6 +124,7 @@ set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
 set viminfo+=n~/.vim/tmp/viminfo.txt
 set backupcopy=yes
+set nnoremap <C-]> g<C-]>
 syntax on
 
 if has('gui_macvim')
