@@ -1,8 +1,8 @@
 #!/bin/bash
 mkdir -p ~/.vim/tmp
 mkdir -p ~/.vim/bundle
-#ln -s ~/dotfiles/.bashrc ~/
-#ln -s ~/dotfiles/.bash_profile ~/
+ln -s ~/dotfiles/.bashrc ~/
+ln -s ~/dotfiles/.bash_profile ~/
 ln -s ~/dotfiles/.vimrc ~/
 ln -s ~/dotfiles/.screenrc ~/
 ln -s ~/dotfiles/.screenrc.local ~/
