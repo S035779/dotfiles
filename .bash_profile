@@ -15,12 +15,15 @@ export PATH
 # export MAIL
 
 # proxy
-#HOST="mamo:mamo1114@ns-master.marimo.net"
-#PORT="3128"
-#export HTTP_PROXY="$HOST:$PORT"
-#export HTTPS_PROXY="$HOST:$PORT"
-#export http_proxy="$HOST:$PORT"
-#export https_proxy="$HOST:$PORT"
+PROTOCOL="http://"
+HOST="mamo:mamo1114@ns-master.marimo.net"
+PORT="3128"
+export HTTP_PROXY="$PROTOCOL$HOST:$PORT"
+export HTTPS_PROXY="$PROTOCOL$HOST:$PORT"
+export http_proxy="$PROTOCOL$HOST:$PORT"
+export https_proxy="$PROTOCOL$HOST:$PORT"
+export HTTP_PROXY_REQUEST_FULLURI=1
+export HTTPS_PROXY_REQUEST_FULLURI=0
 
 # no proxy
 export no_proxy="127.0.0.1,localhost"
