@@ -1,0 +1,7 @@
+[user]
+  name = Mamoru Hashimoto
+  email = you@example.com
+[core]
+  excludesfile = ~/.gitignore
+[url "https://"]
+  insteadOf = git://
