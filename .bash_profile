@@ -24,12 +24,15 @@ export PATH
 # export MAIL
 
 # proxy
-HOST="http://mamo:****@10.0.0.250"
+PROTOCOL="http://"
+HOST="mamo:****@10.0.0.250"
 PORT="3128"
-export HTTP_PROXY="$HOST:$PORT"
-export HTTPS_PROXY="$HOST:$PORT"
-export http_proxy="$HOST:$PORT"
-export https_proxy="$HOST:$PORT"
+export HTTP_PROXY="$PROTOCOL$HOST:$PORT"
+export HTTPS_PROXY="$PROTOCOL$HOST:$PORT"
+export http_proxy="$PROTOCOL$HOST:$PORT"
+export https_proxy="$PROTOCOL$HOST:$PORT"
+export HTTP_PROXY_REQUEST_FULLURI=1
+export HTTPS_PROXY_REQUEST_FULLURI=0
 
 # no proxy
 export no_proxy="127.0.0.1,localhost,github.com,bitbucket.org"
