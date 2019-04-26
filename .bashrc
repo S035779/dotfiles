@@ -20,9 +20,8 @@ PS1='\[\033[0;33m\]\u@\h \[\033[1;30m\]\t \[\033[1;32m\]$(git_branch)\[\033[0m\]
 LESSOPEN="|~/dotfiles/lesspipe.sh %s"
 #MAIL=$HOME/Maildir
 
-PATH="$PATH:$HOME/.local/bin:$HOME/bin:$HOME/work/google-cloud-sdk/bin"
-PATH="$HOME/.nodebrew/current/bin:$PATH"
-PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
+PATH="$HOME/.local/bin:$HOME/bin:$HOME/work/google-cloud-sdk/bin:$HOME/.nodebrew/current/bin:/usr/local/sbin:$PATH"
+#PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin"
 
 # rbenv
 [[ -d ~/.rbenv  ]] && \

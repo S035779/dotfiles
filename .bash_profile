@@ -25,7 +25,7 @@ export PATH
 
 # proxy
 PROTOCOL="http://"
-HOST="mamo:****@10.0.0.250"
+HOST="mamo:mamo1114@10.0.0.250"
 PORT="3128"
 export HTTP_PROXY="$PROTOCOL$HOST:$PORT"
 export HTTPS_PROXY="$PROTOCOL$HOST:$PORT"
