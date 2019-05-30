@@ -16,12 +16,12 @@ export WINEPREFIX
 export PS1
 export LESSOPEN
 export PATH
+export MAIL
 #export CPPFLAGS
 #export CXXFLAGS
 #export CFLAGS
 #export LDFLAGS
 
-# export MAIL
 
 # proxy
 PROTOCOL="http://"
@@ -33,7 +33,10 @@ export http_proxy="$PROTOCOL$HOST:$PORT"
 export https_proxy="$PROTOCOL$HOST:$PORT"
 export HTTP_PROXY_REQUEST_FULLURI=1
 export HTTPS_PROXY_REQUEST_FULLURI=0
-
-# no proxy
+export KUBERNETES_HTTP_PROXY="$PROTOCOL$HOST:$PORT"
+export KUBERNETES_HTTPS_PROXY="$PROTOCOL$HOST:$PORT"
+#
+## no proxy
 export no_proxy="127.0.0.1,localhost,github.com,bitbucket.org"
 export NO_PROXY="127.0.0.1,localhost,github.com,bitbucket.org"
+export KUBERNETES_NO_PROXY="127.0.0.1"
