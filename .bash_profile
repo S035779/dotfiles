@@ -33,10 +33,6 @@ export http_proxy="$PROTOCOL$HOST:$PORT"
 export https_proxy="$PROTOCOL$HOST:$PORT"
 export HTTP_PROXY_REQUEST_FULLURI=1
 export HTTPS_PROXY_REQUEST_FULLURI=0
-export KUBERNETES_HTTP_PROXY="$PROTOCOL$HOST:$PORT"
-export KUBERNETES_HTTPS_PROXY="$PROTOCOL$HOST:$PORT"
-#
 ## no proxy
-export no_proxy="127.0.0.1,localhost,github.com,bitbucket.org"
-export NO_PROXY="127.0.0.1,localhost,github.com,bitbucket.org"
-export KUBERNETES_NO_PROXY="127.0.0.1"
+export no_proxy="192.168.99.100,192.168.99.101,127.0.0.1,localhost,github.com,bitbucket.org"
+export NO_PROXY="192.168.99.100,192.168.99.101,127.0.0.1,localhost,github.com,bitbucket.org"
