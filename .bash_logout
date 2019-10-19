@@ -1,2 +1,2 @@
 #!/bin/sh
-/bin/ssh-agent -k
+/usr/bin/ssh-agent -k

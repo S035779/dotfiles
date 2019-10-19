@@ -17,6 +17,7 @@ export PS1
 export LESSOPEN
 export PATH
 export MAIL
+export GOPATH
 #export CPPFLAGS
 #export CXXFLAGS
 #export CFLAGS

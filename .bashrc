@@ -19,17 +19,17 @@ WINEPREFIX="$HOME/.wine-win32"
 PS1='\[\033[0;33m\]\u@\h \[\033[1;30m\]\t \[\033[1;32m\]$(git_branch)\[\033[0m\] \$ '
 LESSOPEN="|~/dotfiles/lesspipe.sh %s"
 MAIL=$HOME/Maildir
-
 PATH="$HOME/.local/bin:$HOME/bin:$HOME/work/google-cloud-sdk/bin:$HOME/.nodebrew/current/bin:/usr/local/sbin:$PATH"
+GOPATH="$HOME/go"
 #PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin"
+#OPENSSL=1.0.2o_1
+#LDFLAGS="-L/usr/local/Cellar/openssl/${OPENSSL}/lib"
+#CFLAGS="-I/usr/local/Cellar/openssl/${OPENSSL}/include"
+#CXXFLAGS="${CFLANGS}"
+#CPPFLAGS="${CFLANGS}"
 
 # rbenv
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
-#OPENSSL=1.0.2o_1
-#LDFLAGS="-L/usr/local/Cellar/openssl/${OPENSSL}/lib"
-#CFLAGS="-I/usr/local/Cellar/openssl/${OPENSSL}/include"
-#CXXFLAGS="${CFLANGS}"
-#CPPFLAGS="${CFLANGS}"

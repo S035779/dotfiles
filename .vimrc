@@ -118,7 +118,7 @@ set fileencoding=utf-8
 set fileencodings=utf-8,cp932
 set fileformats=unix,dos,mac
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:⍽
 set undodir=~/.vim/tmp
 set backupdir=~/.vim/tmp
 set directory=~/.vim/tmp
