@@ -4,8 +4,8 @@ git_branch() {
 }
 
 alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
 alias vi="vim"
 alias c="clear"
 alias x="exit"
@@ -18,10 +18,16 @@ WINEARCH="win32"
 WINEPREFIX="$HOME/.wine-win32"
 PS1='\[\033[0;33m\]\u@\h \[\033[1;30m\]\t \[\033[1;32m\]$(git_branch)\[\033[0m\] \$ '
 LESSOPEN="|~/dotfiles/lesspipe.sh %s"
-MAIL=$HOME/Maildir
-PATH="$HOME/.local/bin:$HOME/bin:$HOME/go/bin:$HOME/work/google-cloud-sdk/bin:$HOME/.nodebrew/current/bin:/usr/local/sbin:$PATH"
+#MAIL=$HOME/Maildir
+
+PATH="$HOME/.local/bin:$HOME/bin:/usr/local/sbin:$PATH"
+PATH="$HOME/.nodebrew/current/bin:$PATH"
+PATH="$HOME/go/bin:$PATH"
+PATH="$HOME/Library/Python/2.7/bin:$PATH"
+PATH="$HOME/work/google-cloud-sdk/bin:$PATH"
+PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin:$PATH"
+
 GOPATH="$HOME/go"
-#PATH="$HOME/Applications/Wine Stable.app/Contents/Resources/wine/bin"
 #OPENSSL=1.0.2o_1
 #LDFLAGS="-L/usr/local/Cellar/openssl/${OPENSSL}/lib"
 #CFLAGS="-I/usr/local/Cellar/openssl/${OPENSSL}/include"

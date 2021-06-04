@@ -2,7 +2,7 @@ startup_message off
 
 escape ^Jj
 
-defscrollback 2000
+defscrollback 50000
 
 bind l windowlist
 bind r eval 'echo "Resize window"' 'command -c resize'
@@ -21,5 +21,75 @@ bind -c resize ^h eval 'command -c resize' 'resize -h -1'
 bind -c resize ^l eval 'command -c resize' 'resize -h +1'
 bind -c resize ^j eval 'command -c resize' 'resize -v +1'
 bind -c resize ^k eval 'command -c resize' 'resize -v -1'
+
+# recovery zombie.
+zombie kr # k: destroy window, r: resurrect window
+verbose on
+
+# logging
+logfile 'tmp/screenlog.%H.%Y%m%d-%02c:%s-%n.%t.log'
+logtstamp on
+logtstamp string "\n-- SCREEN [%Y/%m/%d %02c:%s] %n.%t --\n"
+
+# hard copy
+hardcopydir 'tmp/hardcopy'
+hardcopy_append on
+
+# paste buffer
+bufferfile 'tmp/screen-exchange'
+
+# nethack-style message
+nethack on
+
+# enable visual bells
+vbell on
+
+# disable vbell toggle binding to use ^G as cancel.
+bind ^G
+
+# both ] and ^] does write the paste (default unnamed) buffer.
+bind ^] paste .
+
+# Create window
+screen -t main0 0
+screen -t main1 1
+screen -t main1 2
+screen -t sub0 3
+screen -t sub1 4
+screen -t sub2 5
+
+# Create layout
+layout new 0:layout0:horizontal
+
+# Split
+split
+split
+split
+split -v
+split -v
+
+# Select window.
+focus top
+resize -v +36
+select 0
+
+focus right
+select 1
+
+focus right
+select 2
+
+focus down
+resize -v +17
+select 3
+
+focus down
+resize -v +12
+select 4
+
+focus down
+select 5
+
+focus top
 
 shell -$SHELL

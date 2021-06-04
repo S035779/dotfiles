@@ -9,6 +9,13 @@ if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
 fi
 
+if [ -f ~/bin/vbox.sh -a -f ~/bin/.vbox ]; then
+  sh ~/bin/vbox.sh status
+else
+  touch ~/bin/.vbox
+  sh ~/bin/vbox.sh start
+fi
+
 # User specific environment and startup programs
 export CLICOLOR
 export WINEARCH
@@ -16,7 +23,7 @@ export WINEPREFIX
 export PS1
 export LESSOPEN
 export PATH
-export MAIL
+#export MAIL
 export GOPATH
 #export CPPFLAGS
 #export CXXFLAGS

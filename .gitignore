@@ -1,17 +1,2 @@
 Thumbs.db
 .DS_Store
-.git/
-vendor/
-node_modules/
-bower_components/
-storage/
-dist/
-logs/
-log/
-tmp/
-.env
-.env.webpack
-*~
-*.swp
-*.lock
-*.log

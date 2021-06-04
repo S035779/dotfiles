@@ -5,3 +5,5 @@
   excludesfile = ~/.gitignore
 [url "https://"]
   insteadOf = git://
+[init]
+	defaultBranch = master

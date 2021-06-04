@@ -2,7 +2,9 @@
 mkdir -p ~/.vim/tmp
 mkdir -p ~/.vim/bundle
 ln -s ~/dotfiles/.bashrc ~/
+ln -s ~/dotfiles/.bashrc ~/.zshrc
 ln -s ~/dotfiles/.bash_profile ~/
+ln -s ~/dotfiles/.bash_profile ~/.zprofile
 ln -s ~/dotfiles/.bash_logout ~/
 ln -s ~/dotfiles/.vimrc ~/
 ln -s ~/dotfiles/.screenrc ~/
