@@ -31,6 +31,7 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'KazuakiM/neosnippet-snippets'
 NeoBundle 'vim-scripts/taglist.vim'
+NeoBundle 'aklt/plantuml-syntax'
 
 call neobundle#end()
 
